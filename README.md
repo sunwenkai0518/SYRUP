@@ -1,3 +1,59 @@
+# SYRUP
+
+**You have no weapon. You have momentum.**
+
+No attack button. Only dash. Pass *through* an enemy to **MARK** it, dash into the mark again to **DETONATE** it and win your energy back — play it right and you never stop moving.
+
+Built with Python + pygame, single file.
+
+## Mechanics
+
+| | |
+|---|---|
+| **DASH** | Costs 1 energy, moves through enemies |
+| **MARK** | Passing through an enemy leaves a mark |
+| **DETONATE** | Dash into a mark to blow it up, refunds **2 energy** |
+| **SHADOW** | Every dash leaves one behind — teleport into it anytime |
+| **CANCEL** | Dash again within 6 frames of landing to erase recovery. **1.4×** score after |
+| **PERFECT SWAP** | Swap while an enemy is touching you — time slows down |
+
+Energy caps at 3, detonation refunds 2. **Chain it right and you never stop. Miss, and the world catches up.**
+
+## Controls
+
+| Key | Action |
+|---|---|
+| Mouse move | Aim / set dash direction |
+| Left click / `SPACE` | Dash |
+| `SHIFT` | Swap with nearest shadow |
+| `R` | Restart |
+| `ESC` | Menu / pause |
+| `TAB` | Training mode |
+| `F11` / `Alt+Enter` | Toggle fullscreen |
+
+## Content
+
+- **5 training stages** — unlocks dash, detonate, swap, cancel and perfect swap one at a time
+- **RUN** — unlocked after training. Endless waves, chase your high score
+- **5 materials** — Syrup / Mercury / Bubble / Oil / Ink, each with its own trail and afterimage
+- **Tunable FX** — trail shape, afterimage, energy glow, detonation feedback, swap residue, floating verses
+
+## Run it
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
+
+**Requires:** Python 3.10+ · pygame 2.6+ · numpy　　**Platform:** Windows / macOS / Linux
+
+Saves are written to the system data directory (`%LOCALAPPDATA%\SYRUP\` on Windows). Chinese text falls back to a system CJK font automatically if no font file is bundled.
+
+## License
+
+[MIT](LICENSE) — use, modify and sell it freely.
+
+
 # SYRUP / 糖浆
 
 **You have no weapon. You have momentum.**
